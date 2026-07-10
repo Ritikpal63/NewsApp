@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <div className="container mt-4">
         <div className="row">
-          {news.articles?.map((item) => (
+          {news?.map((item) => (
             <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={item.url}>
               <div className="card h-100 shadow-sm">
                 <img
