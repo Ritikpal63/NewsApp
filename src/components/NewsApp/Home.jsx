@@ -24,7 +24,7 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={item.url}>
               <div className="card h-100 shadow-sm">
                 <img
-                  src={item.urlToImage || "/no-image.png"}
+                  src={item.image || "/no-image.png"}
                   className="card-img-top"
                   alt='No Pic'
                   style={{ height: "200px", objectFit: "cover" }}
@@ -38,7 +38,7 @@ const Home = () => {
                       {item.author || "Unknown Author"}
                     </span>
                     <span className="card-text text-muted small float-end">
-                      {new Date(item.publishedAt).toLocaleDateString("en-GB") ||
+                      {new Date(item.published_at).toLocaleDateString("en-GB") ||
                         "Date"}
                     </span>
                   </div>
