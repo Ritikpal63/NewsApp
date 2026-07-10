@@ -16,7 +16,7 @@ const NewsApi = () => {
       }
     }
     getNews()
-  },[input, language])
+  },[input, language, setError, setNews])
   return (
     <></>
   )
