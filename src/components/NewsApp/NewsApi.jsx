@@ -8,7 +8,7 @@ const NewsApi = () => {
   useEffect(()=>{
     async function getNews(){
       try {
-        const news = await fetch(`https://newsapi.org/v2/everything?q=${input}&language=${language}&apiKey=d36d93c8848645b8aaac072c0a005665`)
+        const news = await fetch(`https://gnews.io/api/v4/search?q=${input}&lang=${language}&apikey=2d01e84d423d1d7c4a948e4f49ff6c2c`)
         const newsData = await news.json()
         setNews(newsData)
       } catch (error) {
