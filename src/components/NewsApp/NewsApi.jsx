@@ -9,7 +9,7 @@ const NewsApi = () => {
     async function getNews(){
       try {
         if (!input || input.trim() === '') return;
-        const news = await fetch(`https://gnews.io/api/v4/search?q=${input}&lang=${language}&apikey=f3aafd86c52ba41037d6a3c9c2253b12`)
+        const news = await fetch(`https://api.mediastack.com/v1/news?access_key=3376c4991a739517704bbe02a7db183f&keywords=${input}&languages=${language}`)
         const newsData = await news.json()
         setNews(newsData)
       } catch (error) {
