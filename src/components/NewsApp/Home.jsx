@@ -11,7 +11,7 @@ const Home = () => {
     } else {
       setInput("India");
     }
-  }, [category]);
+  }, [setInput, category]);
 
   if (error) return <p>Error {error}</p>;
   if (!news) return <p>Loading...</p>;

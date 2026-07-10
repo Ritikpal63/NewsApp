@@ -3,6 +3,7 @@ import {NewsContext} from '../../context/NewsAppContext'
 
 
 const NewsApi = () => {
+  
   const {input, setNews, setError, language} = useContext(NewsContext)
   useEffect(()=>{
     async function getNews(){
